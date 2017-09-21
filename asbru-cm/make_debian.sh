@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$(whoami)" != "root" ]; then
+	echo "Sorry you have to use sudo to run this script because we need to write to /tmp."
+	echo "We know this isn't a good way to go and we are thinking about a better way to handle this. For the moment please run me with sudo ./make_debian.sh"
+	exit 1
+fi
+
 if [[ -z "$1" ]]; then
 	echo "Please give me a release name matching GitHub. It is case sensitive like 5.0.0-RC1" 1>&2
 	echo "You can find releases under https://github.com/asbru-cm/asbru-cm/releases" 1>&2
