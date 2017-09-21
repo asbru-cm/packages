@@ -18,7 +18,13 @@ mkdir /tmp/asbru-packaging
 RELEASE=$1
 RELEASE_DEBIAN=${1,,}
 
-wget https://github.com/asbru-cm/asbru-cm/archive/$RELEASE.tar.gz -O /tmp/asbru-packaging/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz
+wget -q https://github.com/asbru-cm/asbru-cm/archive/$RELEASE.tar.gz -O /tmp/asbru-packaging/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz
+
+if [ $? -ne 0 ]; then
+	echo "An error occured while downloading release $RELEASE"
+	echo "Please check if that release actually exists and the server isn't down"
+	exit 1
+fi
 
 tar -xzf /tmp/asbru-packaging/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz -C /tmp/asbru-packaging/
 
