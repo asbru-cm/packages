@@ -11,6 +11,7 @@ fi
 PACKAGE_DIR=./tmp
 RELEASE=$1
 RELEASE_DEBIAN=${1,,}
+DEBIAN_VERSION=${RELEASE_DEBIAN/-/"~"}
 
 rm -rf $PACKAGE_DIR
 mkdir $PACKAGE_DIR
@@ -28,6 +29,8 @@ tar -xzf /tmp/asbru-packaging/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz -C $PACKAGE_D
 cp -R debian/ $PACKAGE_DIR/asbru-cm-$RELEASE/debian/
 
 cd $PACKAGE_DIR/asbru-cm-$RELEASE/
+
+mv ../asbru-cm_$RELEASE_DEBIAN.orig.tar.gz ../asbru-cm_$DEBIAN_VERSION.orig.tar.gz
 
 debuild -us -uc
 
