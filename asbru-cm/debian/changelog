@@ -1,0 +1,5 @@
+asbru-cm (5.0.0-rc1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Klaas Tammling <klaas@tammling.hamburg>  Sun, 17 Sep 2017 12:19:30 +0200
