@@ -1,12 +1,19 @@
 #!/bin/bash
 
+if ! [ -x "$(command -v debuild)" ]; then
+	echo "debuild is required, did you install the 'devscripts' package yet ?"
+	exit 1
+fi
+
 if [[ -z "$1" ]]; then
+	# DevNote:
+	#   If not specified, we should get the latest release from
+	#     curl "https://api.github.com/repos/asbru-cm/asbru-cm/tags"
+	#
 	echo "Please give me a release name matching GitHub. It is case sensitive like 5.0.0-RC1" 1>&2
 	echo "You can find releases under https://github.com/asbru-cm/asbru-cm/releases" 1>&2
 	exit 1
 fi
-
-
 
 PACKAGE_DIR=./tmp
 RELEASE=$1
@@ -24,7 +31,7 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
-tar -xzf /tmp/asbru-packaging/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz -C $PACKAGE_DIR
+tar -xzf $PACKAGE_DIR/asbru-cm_$RELEASE_DEBIAN.orig.tar.gz -C $PACKAGE_DIR
 
 cp -R debian/ $PACKAGE_DIR/asbru-cm-$RELEASE/debian/
 
