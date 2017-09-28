@@ -10,6 +10,6 @@ Vcs-Browser: https://github.com/asbru-cm/asbru-cm.git
 
 Package: asbru-cm
 Architecture: amd64
-Depends: ${misc:Depends}
+Depends: libgnome2-vte-perl libyaml-perl libossp-uuid-perl libcrypt-cbc-perl libgtk2-unique-perl libsocket6-perl libnet-arp-perl libcrypt-blowfish-perl libcrypt-rijndael-perl libgtk2-ex-simple-list-perl libgnome2-gconf-perl libgtk2-gladexml-perl libexpect-perl
 Description: A free and open-source connection manager
  Ásbrú Connection Manager is a user interface that helps organizing remote terminal sessions and automating repetitive tasks.
