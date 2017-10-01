@@ -43,6 +43,7 @@ fi
 
 if [[ -z "$RELEASE" ]] ; then
   echo -e "${ERROR}"
+  echo "Either we could not fetch the latest release or no releasename is given." 1>&2
   echo "Please provide a release name matching GitHub. It is case sensitive like 5.0.0-RC1" 1>&2
   echo "You can find Ásbrú releases at https://github.com/asbru-cm/asbru-cm/releases" 1>&2
   echo " " 1>&2
