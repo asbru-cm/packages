@@ -1,3 +1,9 @@
+asbru-cm (5.0.0~rc2-2) unstable; urgency=medium
+
+  * New dependency for libgnome2-vte-perl added
+
+ -- Klaas Tammling <ktammling@localhost.localdomain>  Sun, 01 Oct 2017 10:11:33 +0200
+
 asbru-cm (5.0.0~rc2-1) unstable; urgency=medium
 
   * New icon
