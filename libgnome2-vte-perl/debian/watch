@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/Gnome2-Vte   .*/Gnome2-Vte-v?(\d[\d.-]*)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$
