@@ -1,3 +1,15 @@
+asbru-cm (5.0.0~rc3-2) unstable; urgency=medium
+
+  * Added dependency for libcanberra-gtk-module
+
+ -- Klaas Tammling <klaas@tammling.hamburg>  Wed, 01 Nov 2017 18:27:13 +0100
+
+asbru-cm (5.0.0~rc3-1) unstable; urgency=medium
+
+  * Upstream release 5.0.0-RC3
+
+ -- Klaas Tammling <klaas@tammling.hamburg>  Tue, 31 Oct 2017 09:50:05 +0100
+
 asbru-cm (5.0.0~rc2-2) unstable; urgency=medium
 
   * New dependency for libgnome2-vte-perl added
