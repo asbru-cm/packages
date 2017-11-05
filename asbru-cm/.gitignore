@@ -1,0 +1,7 @@
+rpm/BUILD
+rpm/BUILDROOT
+rpm/RPMS
+rpm/SOURCES
+rpm/SRPMS
+rpm/tmp
+
