@@ -8,15 +8,58 @@ License:    GPLv3+
 URL:        https://asbru-cm.net
 Source0:    https://github.com/asbru-cm/asbru-cm/archive/%{version}.tar.gz
 BuildArch:  noarch
-Requires:   perl-Gtk2-Unique perl-Gtk2-Ex-Simple-List perl-Gtk2-GladeXML perl-Gtk2
-Requires:   perl-Gnome2-Vte perl-Gnome2-GConf
-Requires:   perl-Crypt-Blowfish perl-Crypt-Rijndael perl-Crypt-CBC
-Requires:   perl-YAML uuid-perl perl-Expect perl-IO-Stty perl-IO-Tty
-Requires:   perl-Net-Ping perl-Net-ARP perl-Digest-SHA1 perl-Digest-SHA
-Requires:   perl-Carp perl-Encode perl-Exporter perl-Socket
-Requires:   perl-Socket6 perl-Storable perl-Time-HiRes perl-constant perl-libs
-Requires:   perl-File-KeePass perl-HTTP-Proxy
-Requires:   perl-interpreter vte ftp telnet bash
+Requires:   perl
+Requires:   perl(Carp)
+Requires:   perl(Compress::Raw::Zlib)
+Requires:   perl(Crypt::CBC)
+Requires:   perl(Crypt::Rijndael)
+Requires:   perl(Crypt::Blowfish)
+Requires:   perl(Data::Dumper)
+Requires:   perl(Digest::SHA)
+Requires:   perl(DynaLoader)
+Requires:   perl(Encode)
+Requires:   perl(Expect)
+Requires:   perl(Exporter)
+Requires:   perl(File::Basename)
+Requires:   perl(File::Copy)
+Requires:   perl(FindBin)
+Requires:   perl(Gnome2::GConf)
+Requires:   perl(Gtk2)
+Requires:   perl(Gtk2::AppIndicator)
+Requires:   perl(Gtk2::Ex::Simple::List)
+Requires:   perl(Gtk2::Ex::Simple::TiedCommon)
+Requires:   perl(Gtk2::GladeXML)
+Requires:   perl(Gtk2::SourceView2)
+Requires:   perl(Gtk2::Unique)
+Requires:   perl(IO::Handle)
+Requires:   perl(IO::Stty)
+Requires:   perl(IO::Tty)
+Requires:   perl(IO::Socket)
+Requires:   perl(IO::Socket::INET)
+Requires:   perl(MIME::Base64)
+Requires:   perl(Net::ARP)
+Requires:   perl(Net::Ping)
+Requires:   perl(HTTP::Proxy)
+Requires:   perl(OSSP::uuid)
+Requires:   perl(POSIX)
+Requires:   perl(Socket)
+Requires:   perl(Socket6)
+Requires:   perl(Storable)
+Requires:   perl(Sys::Hostname)
+Requires:   perl(Time::HiRes)
+Requires:   perl(XML::Parser)
+Requires:   perl(YAML)
+Requires:   perl(constant)
+Requires:   perl(lib)
+Requires:   perl(strict)
+Requires:   perl(utf8)
+Requires:   perl(vars)
+Requires:   perl(warnings)
+Requires:   perl-Gnome2-Vte
+Requires:   vte
+Requires:   ftp
+Requires:   telnet
+Requires:   bash
 BuildRoot:  %{_topdir}/tmp/%{name}-%{version}-%{release}-root
 
 %description
@@ -24,6 +67,8 @@ BuildRoot:  %{_topdir}/tmp/%{name}-%{version}-%{release}-root
 
 %prep
 %autosetup -n asbru-cm-%{_github_version} -p1
+sed -ri -e "s|\\\$RealBin[ ]*\.[ ]*'|'%{_datadir}/%{name}/lib|g" lib/pac_conn
+sed -ri -e "s|\\\$RealBin,|'%{_datadir}/%{name}',|g" lib/pac_conn
 find . -type f -exec sed -i \
   -e "s|\$RealBin[ ]*\.[ ]*'|'%{_datadir}/%{name}|g" \
   -e 's|"\$RealBin/|"%{_datadir}/%{name}/|g' \
