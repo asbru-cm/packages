@@ -15,6 +15,9 @@ Package: libgnome2-vte-perl
 Architecture: any
 Depends: ${misc:Depends}, ${perl:Depends}, ${shlibs:Depends}
 Description: Perl interface to the Virtual Terminal Emulation library
- (no description was found)
- .
- This description was automagically extracted from the module by dh-make-perl.
+  This module allows you to use the Virtual Terminal Emulation library (libvte for short) from Perl.
+  .
+  The canonical API documentation can be found at:
+    http://developer.gnome.org/doc/API/2.0/vte/index.html
+  Gnome2::Vte also comes with automatically generated API documentation.  Its index can be accessed with:
+    perldoc Gnome2::Vte::index

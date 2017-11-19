@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Some working variables
+G="\033[32m"
+B="\033[39m"
+Y="\033[33m"
+OK="${G}OK${B}"
+ERROR="${Y}ERROR${B}"
+
 PACKAGE_DIR=./tmp
 
 rm -rf $PACKAGE_DIR
@@ -20,6 +27,14 @@ cd $PACKAGE_DIR/Gnome2-Vte-0.11/
 
 mv ../Gnome2-Vte-0.11.tar.gz ../libgnome2-vte-perl_0.11.orig.tar.gz
 
+echo -n "Building package release, be patient ..."
+
 debuild -us -uc
 
-echo "If everything went good you will find your packages here under $PACKAGE_DIR"
+if [ $? -eq 0 ] ; then
+  echo -e " $OK !"
+  echo "This look like good news, package succesfully build in $PACKAGE_DIR :)"
+else
+  echo -e "${ERROR}"
+  echo "Bad news, something did not happen as expected, check .build file in $PACKAGE_DIR to get more information."
+fi
