@@ -97,7 +97,7 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/{%{_mandir}/man1,%{_bindir}}
 mkdir -p %{buildroot}/%{_datadir}/{%{name}/{lib,res},applications}
 mkdir -p %{buildroot}/%{_bashcompletiondir}
-mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/{24x24,64x64}/apps
+mkdir -p %{buildroot}/%{_datadir}/icons/hicolor/{24x24,64x64,256x256,scalable}/apps
 
 install -m 755 asbru %{buildroot}/%{_bindir}/%{name}
 install -m 755 utils/pac_from_mcm.pl %{buildroot}/%{_bindir}/%{name}_from_mcm
@@ -110,6 +110,8 @@ cp -a res/pac_bash_completion %{buildroot}/%{_bashcompletiondir}/%{name}
 # Copy the icons over to /usr/share/icons/
 cp -a res/asbru-logo-24.png %{buildroot}/%{_datadir}/icons/hicolor/24x24/apps/%{name}.png
 cp -a res/asbru-logo-64.png %{buildroot}/%{_datadir}/icons/hicolor/64x64/apps/%{name}.png
+cp -a res/asbru-logo-256.png %{buildroot}/%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+cp -a res/asbru-logo.svg %{buildroot}/%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 
 # Copy the remaining resources and libraries
 cp -a res/*.{png,jpg,pl,glade} res/termcap %{buildroot}/%{_datadir}/%{name}/res/
