@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/Gtk2-Unique   .*/Gtk2-Unique-v?(\d[\d.-]+)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$

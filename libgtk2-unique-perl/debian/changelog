@@ -1,0 +1,104 @@
+libgtk2-unique-perl (0.05-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ Simon Kainz ]
+  * Add Simon Kainz to Uploaders.
+  * fix segfault on starting second instance.
+    (Closes: #852277)
+  * fix stack smashing error when usng unique_message_data_get() function,
+    makes sample.pl work
+
+ -- Simon Kainz <skainz@debian.org>  Fri, 03 Feb 2017 12:13:32 +0100
+
+libgtk2-unique-perl (0.05-2) unstable; urgency=low
+
+  * Team upload
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Florian Schlichting ]
+  * Switch dh compatibility to level 9 to enable passing of hardening flags
+  * Declare compliance with Debian Policy 3.9.5
+  * Forward and add DEP-3 headers to add-whatis
+
+ -- Florian Schlichting <fsfs@debian.org>  Thu, 24 Apr 2014 21:50:36 +0200
+
+libgtk2-unique-perl (0.05-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Update copyright information
+
+  [ Damyan Ivanov ]
+  * add -a option to xvfb-run invocation
+
+  [ gregor herrmann ]
+  * Set Standards-Version to 3.9.1 (no changes).
+  * debian/copyright: update license stanzas.
+  * debian/control: remove version from libgtk2-perl (build) dependency.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 20 Nov 2010 19:29:11 +0100
+
+libgtk2-unique-perl (0.04-1) unstable; urgency=low
+
+  [ Jonathan Yu ]
+  * New upstream release
+  * Add myself to Copyright and Uploaders
+  * Rewrite control description
+  * Standards-Version 3.8.3
+  * Add perl to B-D, as it's not build-essential
+  * Refresh copyright information
+
+  [ Ryan Niebur ]
+  * Update ryan52's email address
+
+  [ gregor herrmann ]
+  * Refresh patch.
+  * Convert to source format 3.0 (quilt). Remove quilt framework.
+  * Set Standards-Version to 3.8.4 (no changes).
+  * Add /me to Uploaders.
+  * debian/{rules,control}: activate the test suite again, it seems fixed.
+    Also remove dbus-x11/dbus-launch, tests pass without them.
+  * debian/copyright: update Format-Specification and debian/ info.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 07 Mar 2010 18:37:30 +0100
+
+libgtk2-unique-perl (0.02-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * New upstream release
+  * Debian Policy 3.8.2
+
+  [ gregor herrmann ]
+  * debian/copyright: add year of upstream copyright.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Mon, 13 Jul 2009 12:54:52 -0700
+
+libgtk2-unique-perl (0.01-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #530578)
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Mon, 25 May 2009 21:38:08 -0700

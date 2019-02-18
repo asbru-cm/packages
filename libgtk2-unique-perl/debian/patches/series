@@ -1,0 +1,3 @@
+add-whatis
+fix_segfault_2nd_instance
+fix_stack_smashing-send_message_by_name
