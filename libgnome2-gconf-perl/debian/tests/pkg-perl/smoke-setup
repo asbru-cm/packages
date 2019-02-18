@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $TDIR
+
+dbus-daemon --session --fork --address="unix:abstract=$TDIR/dbus-libgnome2-gconf-perl" --print-pid=4 4>pid.tmp

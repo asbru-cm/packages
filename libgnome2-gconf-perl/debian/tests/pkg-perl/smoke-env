@@ -1,0 +1,1 @@
+DBUS_SESSION_BUS_ADDRESS="unix:abstract=$TDIR/dbus-libgnome2-gconf-perl"

@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+bindnow
+
+%:
+	dh $@
+
+override_dh_auto_test:
+	dbus-run-session -- dh_auto_test
