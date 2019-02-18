@@ -15,7 +15,7 @@ If starting from a very clean Ubuntu installation, please make sure you have the
 ## For any Debian based distribution
 
     sudo apt update
-    sudo apt install git debhelper devscripts libunique-dev
+    sudo apt install git debhelper devscripts libunique-dev xvfb
     git clone https://github.com/asbru-cm/packages.git
     cd packages/libgtk2-unique-perl
     ./make_debian.sh
