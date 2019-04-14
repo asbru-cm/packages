@@ -8,6 +8,6 @@ This should help to provide a finished .deb which will be compiled from CPAN.
     sudo apt-add-repository multiverse
     sudo apt update
     sudo apt install git debhelper devscripts libvte-dev libgtk2-perl libextutils-pkgconfig-perl libextutils-depends-perl
-    git clone git@github.com:asbru-cm/packages.git
+    git clone https://github.com/asbru-cm/packages.git
     cd packages/libgnome2-vte-perl
     ./make_debian.sh
