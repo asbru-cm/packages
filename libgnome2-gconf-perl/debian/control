@@ -1,8 +1,5 @@
 Source: libgnome2-gconf-perl
-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
-Uploaders: gregor herrmann <gregoa@debian.org>
-Section: perl
-Testsuite: autopkgtest-pkg-perl
+Maintainer: Ásbrú Project Team <contact@asbru-cm.net>
 Priority: optional
 Build-Depends: debhelper (>= 9.20120312~),
                perl,
@@ -12,8 +9,6 @@ Build-Depends: debhelper (>= 9.20120312~),
                libgconf2-dev,
                libglib-perl
 Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libgnome2-gconf-perl.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libgnome2-gconf-perl.git
 Homepage: http://gtk2-perl.sourceforge.net/
 
 Package: libgnome2-gconf-perl
