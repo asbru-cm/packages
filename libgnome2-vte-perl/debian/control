@@ -2,7 +2,8 @@ Source: libgnome2-vte-perl
 Section: perl
 Priority: optional
 Maintainer: Ásbrú Project Team <contact@asbru-cm.net>
-Build-Depends: debhelper (>= 9),
+Uploaders: Peter J. Mello <admin@petermello.net>
+Build-Depends: debhelper (>= 10.2.2),
  libextutils-depends-perl (>= 0.305),
  libextutils-pkgconfig-perl,
  libglib-perl (>= 3:1.304),
@@ -10,7 +11,7 @@ Build-Depends: debhelper (>= 9),
  libvte-dev (>= 1:0.10.27),
  perl (>= 5.8.0)
 Standards-Version: 4.3.0
-Homepage: https://metacpan.org/release/Gnome2-Vte
+Homepage: http://gtk2-perl.sourceforge.net/
 Vcs-Browser: https://gitlab.gnome.org/GNOME/perl-gnome2-vte
 Vcs-Git: https://gitlab.gnome.org/GNOME/perl-gnome2-vte.git
 Testsuite: autopkgtest-pkg-perl
