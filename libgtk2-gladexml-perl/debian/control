@@ -1,0 +1,53 @@
+Source: libgtk2-gladexml-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ryan Niebur <ryan@debian.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9.20120312~),
+               perl,
+               libextutils-depends-perl,
+               libextutils-pkgconfig-perl,
+               libglib-perl,
+               libgtk2-perl,
+               libglade2-dev,
+               xvfb,
+               xauth,
+               xfonts-base
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libgtk2-gladexml-perl.git
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libgtk2-gladexml-perl.git
+Homepage: http://gtk2-perl.sourceforge.net/
+
+Package: libgtk2-gladexml-perl
+Architecture: any
+Depends: ${perl:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends},
+         libglib-perl,
+         libgtk2-perl
+Description: Perl interface to use user interfaces created with glade-2
+ libgtk2-gladexml-perl allows a Perl developer to use the gladexml part of
+ the libglade library.
+ .
+ Glade is a free user interface builder for Gtk+ and GNOME. After designing
+ a user interface with glade-2 the layout and configuration are saved in an
+ XML file. libglade is a library which knows how to build and hook up the
+ user interface described in the Glade XML file at application run time. 
+ .
+ This module even allows developers to load a interface definition into a
+ scalar to customize them just before loading the application itself.
+ .
+ Find out more about GNOME at http://www.gnome.org.
+ .
+ The perl bindings follow the C API very closely, and the C reference
+ documentation should be considered the canonical source:
+ http://developer.gnome.org/doc/API/2.0/libglade/index.html
+ .
+ This module is part of gtk2-perl.
+ .
+ To discuss gtk2-perl, ask questions and flame/praise the authors,
+ join gtk-perl-list@gnome.org at lists.gnome.org.
+ .
+ Also have a look at the gtk2-perl website and sourceforge project page,
+ http://gtk2-perl.sourceforge.net
+

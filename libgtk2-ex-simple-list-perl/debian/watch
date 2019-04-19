@@ -1,0 +1,2 @@
+version=3
+https://metacpan.org/release/Gtk2-Ex-Simple-List  .+/Gtk2-Ex-Simple-List-v?(\d[\d.-]+)\.(?:tar(?:\.gz|\.bz2)?|tgz|zip)$

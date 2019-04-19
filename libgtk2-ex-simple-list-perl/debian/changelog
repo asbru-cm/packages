@@ -1,0 +1,75 @@
+libgtk2-ex-simple-list-perl (0.50-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Ansgar Burchardt ]
+  * Update my email address.
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Florian Schlichting ]
+  * Update d/copyright to copyright-format 1.0
+  * Update license paragraphs to commonly used versions
+  * Bump dh compat to level 11
+  * Declare compliance with Debian Policy 4.1.4
+  * Mark package autopkgtest-able
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 30 Jun 2018 17:47:01 +0200
+
+libgtk2-ex-simple-list-perl (0.50-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Take over for the Debian Perl Group with maintainer's permission
+    (http://lists.debian.org/debian-perl/2008/06/msg00039.html)
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza). Changed:
+    Maintainer set to Debian Perl Group <pkg-perl-
+    maintainers@lists.alioth.debian.org> (was: Florian Ragwitz
+    <rafl@debian.org>); Florian Ragwitz <rafl@debian.org> moved to
+    Uploaders.
+  * Add debian/watch.
+
+  [ Ryan Niebur ]
+  * Remove Florian Ragwitz from Uploaders
+  * Close ITA (Closes: #523133)
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * Refresh debian/rules for debhelper 7.
+  * Include examples in binary package.
+  * Use source format 3.0 (quilt).
+  * debian/control: Mention module name in description.
+  * debian/control: Build-dep on xauth instead of xbase-clients.
+  * Convert debian/copyright to proposed machine-readable format.
+  * Bump Standards-Version to 3.8.4.
+  * Add myself to Uploaders.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Sun, 14 Feb 2010 17:33:17 +0900
+
+libgtk2-ex-simple-list-perl (0.50-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix FTBFS with Perl 5.10.  Closes: #467939
+
+ -- Mark Hymers <mhy@debian.org>  Sat, 05 Apr 2008 21:09:15 +0100
+
+libgtk2-ex-simple-list-perl (0.50-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Florian Ragwitz <rafl@debian.org>  Fri, 16 Jun 2006 12:00:54 +0200

@@ -1,0 +1,110 @@
+libgtk2-gladexml-perl (1.007-2) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ryan Niebur ]
+  * Email change: Ryan Niebur -> ryan@debian.org
+
+  [ Damyan Ivanov ]
+  * add -a option to xvfb-run invocation
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ gregor herrmann ]
+  * Switch to "3.0 (quilt)" source format.
+  * Use short-form dh(1) based debian/rules.
+  * Use debhelper 9.20120312 to get all hardening flags.
+  * debian/copyright: switch formatting to Copyright-Format 1.0.
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 22 Feb 2014 23:09:30 +0100
+
+libgtk2-gladexml-perl (1.007-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Take over for the Debian Perl Group on maintainer's request
+    (http://lists.debian.org/debian-perl/2008/12/msg00163.html)
+  * Add me to uploaders, remove old maintainer(s)
+  * fix watch file
+  * New upstream release
+  * debhelper 7
+  * install NEWS
+  * policy 3.8.0
+  * use xvfb-run to run the tests
+  * switch to machine readable copyright format
+
+  [ gregor herrmann ]
+  * debian/control: make build dependency on libextutils-depends-perl
+    versioned.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Sun, 25 Jan 2009 00:49:04 -0800
+
+libgtk2-gladexml-perl (1.006-1) unstable; urgency=low
+
+  [ Marc 'HE' Brockschmidt ]
+  * New upstream release
+  * debian/control:
+    + Bump Standards-Version
+
+  [ Florian Ragwitz ]
+  * debian/control
+    + Change Maintainer field to point to the Gtk2-Perl list.
+    + Add me to the Uploaders field.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sun, 15 Oct 2006 14:53:24 +0200
+
+libgtk2-gladexml-perl (1.005-1) unstable; urgency=low
+
+  * New upstream release:
+    + Improves documentation, including docs about usage of Gnome widgets
+      (Closes: #291480)
+  * Bumped Standards-Version to 3.6.2. Yay, no changes needed!
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sun,  7 Aug 2005 02:35:44 +0200
+
+libgtk2-gladexml-perl (1.003-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Sun, 16 Jan 2005 13:34:12 +0100
+
+libgtk2-gladexml-perl (1.001-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Thu, 16 Sep 2004 17:42:43 +0200
+
+libgtk2-gladexml-perl (1.00-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Updated long description to match the ones of other Gtk2 modules
+      (also provide more/better information).
+    + I'm a DD.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Tue, 30 Mar 2004 20:20:50 +0200
+
+libgtk2-gladexml-perl (0.96-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Marc 'HE' Brockschmidt <he@debian.org>  Fri, 19 Mar 2004 14:40:18 +0100
+
+libgtk2-gladexml-perl (0.95-1) unstable; urgency=low
+
+  * New upstream release.
+  * Now also install examples
+  * Explicitly depend on libglib-perl
+
+ -- Marc Brockschmidt <marc@dch-faq.de>  Wed, 21 Jan 2004 19:19:14 +0100
+
+libgtk2-gladexml-perl (0.94-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Marc Brockschmidt <marc@dch-faq.de>  Wed, 19 Nov 2003 15:40:47 +0100
+

@@ -1,0 +1,30 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Gtk2-GladeXML
+Upstream-Contact: rwmcfa1 at neces dot com
+Source: http://gtk2-perl.sourceforge.net/
+
+Files: *
+Copyright: Copyright (C) 2003-2008 by rwmcfa1 at neces dot com and the gtk2-perl team.
+License: LGPL-2
+
+Files: debian/*
+Copyright: Copyright 2003-2006 Marc Brockschmidt <marc@dch-faq.de>
+ Copyright 2009 Ryan Niebur <ryan@debian.org>
+License: LGPL-2
+
+Files: examples/progress.* examples/fileman.* examples/hello-world.*
+Copyright: Copyright 2003 Bruce Alderson
+License: LGPL-2
+
+Files: examples/dnd.* examples/clipboard.*
+Copyright: Copyright 2004 Fabrice Duballet
+License: LGPL-2
+
+License: LGPL-2
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ A copy of the LGPL-2 can be found at /usr/share/common-licenses/LGPL-2 on
+ any Debian system.

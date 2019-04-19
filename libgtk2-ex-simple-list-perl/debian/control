@@ -1,0 +1,20 @@
+Source: libgtk2-ex-simple-list-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 11)
+Build-Depends-Indep: perl, xauth, xvfb, libglib-perl, libgtk2-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>
+Standards-Version: 4.1.4
+Homepage: https://metacpan.org/release/Gtk2-Ex-Simple-List
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libgtk2-ex-simple-list-perl.git
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libgtk2-ex-simple-list-perl
+Testsuite: autopkgtest-pkg-perl
+
+Package: libgtk2-ex-simple-list-perl
+Architecture: all
+Depends: ${perl:Depends}, ${misc:Depends}, libglib-perl, libgtk2-perl
+Description: simple interface to Gtk2's complex MVC list widget
+ Gtk2::Ex::Simple::List is a simple interface to the powerful but complex
+ Gtk2::TreeView and Gtk2::ListStore combination, implementing using tied
+ arrays to make thing simple and easy.
