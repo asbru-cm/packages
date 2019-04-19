@@ -25,6 +25,8 @@ cp -R debian/ $PACKAGE_DIR/Gnome2-Vte-0.11/debian/
 
 cd $PACKAGE_DIR/Gnome2-Vte-0.11/
 
+perl -i -pe "s/unstable/$(lsb_release -cs)/" debian/changelog
+
 mv ../Gnome2-Vte-0.11.tar.gz ../libgnome2-vte-perl_0.11.orig.tar.gz
 
 echo -n "Building package release, be patient ..."
